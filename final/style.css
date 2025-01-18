@@ -1,0 +1,236 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Workspace Container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 500px;  /* Set the width of the content */
+    height: 500px;
+    padding: 20px;
+    overflow: auto;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    flex-direction: column;
+}
+
+/* Search Input Styling */
+#search-container {
+    margin-bottom: 20px;
+}
+
+#search-workspace-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+}
+#blocked-websites{
+    background-color: red;
+  
+}
+
+#workspace-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create a flexible grid */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limit max width */
+    overflow-y: auto; /* Scrollable if content exceeds height */
+    height: 90vh; /* Make it scrollable vertically */
+}
+
+/* Workspace Item Styling */
+.workspace-item {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.workspace-item:hover {
+    transform: scale(1.05); /* Slight hover zoom effect */
+}
+
+/* Workspace Header */
+.workspace-item > div {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+/* Buttons */
+button {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Create Button - Green */
+#create-workspace-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+#create-workspace-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Workspace Action Buttons */
+button.add-tab-btn,
+button.open-workspace-btn,
+button.delete-workspace-btn {
+    background-color: #555;
+    color: white;
+}
+
+button.add-tab-btn:hover,
+button.open-workspace-btn:hover {
+    background-color: #666;
+}
+
+button.delete-workspace-btn {
+    background-color: #f44336; /* Red color for delete button */
+}
+
+button.delete-workspace-btn:hover {
+    background-color: #e53935;
+}
+
+/* To-Do List Section */
+button.toggle-todo-btn {
+    background-color: #333;
+    color: white;
+}
+
+button.toggle-todo-btn:hover {
+    background-color: #555;
+}
+
+.todo-section {
+    margin-top: 10px;
+    display: none; /* Hidden by default */
+}
+
+.todo-input,
+.todo-add-btn {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+.todo-input {
+    width: 80%;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.todo-list li {
+    background-color: #333;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-add-btn {
+    background-color: #4caf50; /* Green color for add task button */
+    color: white;
+}
+
+.todo-add-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-task-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-task-btn:hover {
+    background-color: #e53935;
+}
+
+/* Tab List Section */
+button.toggle-tab-btn {
+    background-color: #333;
+    color: white;
+}
+
+button.toggle-tab-btn:hover {
+    background-color: #555;
+}
+
+.tab-section {
+    margin-top: 10px;
+    display: none; /* Hidden by default */
+}
+
+.tab-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.tab-list li {
+    background-color: #333;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Header */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4caf50;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+/* Workspace Buttons */
+button.add-tab-btn,
+button.open-workspace-btn {
+    background-color: #555;
+    color: white;
+}
+
+button.add-tab-btn:hover,
+button.open-workspace-btn:hover {
+    background-color: #666;
+}

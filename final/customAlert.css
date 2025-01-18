@@ -1,0 +1,61 @@
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #101820; /* Rich black background */
+    border: 2px solid #00c851; /* Vibrant green border */
+    padding: 20px;
+    border-radius: 12px; /* Slightly rounded corners for a premium feel */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Deep shadow for a modern effect */
+    z-index: 1000;
+    color: #00c851; /* Vibrant green text */
+    text-align: center;
+    width: 300px; /* Fixed width for consistency */
+    font-family: "Arial", sans-serif; /* Clean and modern font */
+  }
+  
+  .custom-alert p {
+    margin: 0;
+    font-size: 18px; /* Larger font for readability */
+    font-weight: 600; /* Slightly bold text for premium look */
+    color: #00c851; /* Green text for consistency */
+  }
+  
+  .custom-alert-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .custom-alert-close-btn,
+  .custom-alert-cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px; /* Rounded corners for a modern button style */
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  }
+  
+  .custom-alert-close-btn {
+    background-color: #00c851; /* Vibrant green button */
+    color: #101820; /* Black text for contrast */
+  }
+  
+  .custom-alert-close-btn:hover {
+    background-color: #009e3a; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  .custom-alert-cancel-btn {
+    background-color: #ff3b3b; /* Bold red for cancel button */
+    color: #ffffff; /* White text for high contrast */
+  }
+  
+  .custom-alert-cancel-btn:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
